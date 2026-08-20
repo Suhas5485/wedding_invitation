@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4a1020">
+  <title>Sai Shivani & Shiva Ganesh | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="loader-card">
+      <div class="mandala">✦</div>
+      <p class="eyebrow">A celebration of love</p>
+      <h1>Wedding Invitation</h1>
+      <p>Chi. La. Sow. Sai Shivani<br><span>&</span><br>Chi. Shiva Ganesh</p>
+      <button id="openBtn" class="gold-btn">Open Invitation</button>
+      <small>Tap to enter &amp; play the wedding music</small>
+    </div>
+  </div>
+
+  <button id="musicBtn" class="music-btn" aria-label="Play or pause music">♫</button>
+  <audio id="weddingMusic" loop preload="auto">
+    <source src="music/wedding-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <main id="invitation" class="hidden">
+    <section class="hero">
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">With the blessings of God and our elders</p>
+        <p class="invite-line">Together with their families</p>
+        <h1>Sai Shivani <span>&amp;</span> Shiva Ganesh</h1>
+        <div class="ornament">❦</div>
+        <p class="hero-date">Wednesday · 26 August 2026 · 11:23 A.M.</p>
+        <a class="scroll-cue" href="#couple">Scroll to explore ↓</a>
+      </div>
+    </section>
+
+    <section id="couple" class="section couple-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Two hearts, one beautiful beginning</p>
+        <h2>The Couple</h2>
+      </div>
+      <div class="couple-grid">
+        <article class="person-card reveal">
+          <div class="portrait"><img src="images/bride-waist.jpg" alt="Bride portrait"></div>
+          <p class="role">The Bride</p>
+          <h3>Sai Shivani</h3>
+          <p>Chi. La. Sow. Sai Shivani</p>
+          <p class="parents">Daughter of<br><strong>Sri Gorantala Rajendrakumar &amp; Jyothi</strong></p>
+        </article>
+
+        <div class="couple-heart reveal">♥</div>
+
+        <article class="person-card reveal">
+          <div class="portrait"><img src="images/groom-waist.jpg" alt="Groom portrait"></div>
+          <p class="role">The Groom</p>
+          <h3>Shiva Ganesh</h3>
+          <p>Chi. Shiva Ganesh</p>
+          <p class="parents">Son of<br><strong>Smt. &amp; Sri. Gajula Indira &amp; Shivashankar</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="photo-banner">
+      <img src="images/couple.jpg" alt="Sai Shivani and Shiva Ganesh">
+      <div class="photo-banner-text">
+        <p class="eyebrow">A day to remember</p>
+        <h2>Come celebrate our forever</h2>
+      </div>
+    </section>
+
+    <section class="section details-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Please join us on our special day</p>
+        <h2>Wedding Ceremony</h2>
+      </div>
+      <div class="details-grid">
+        <article class="detail-card reveal"><span>❧</span><h3>Date</h3><p>Wednesday, 26 August 2026</p></article>
+        <article class="detail-card reveal"><span>◷</span><h3>Time</h3><p>11:23 A.M.</p></article>
+        <article class="detail-card reveal"><span>✿</span><h3>Muhurtham</h3><p>Sravana Nakshatram<br>Thula Lagnam</p></article>
+        <article class="detail-card reveal"><span>⌖</span><h3>Venue</h3><p>Lalitha Convention Hall<br>Hanamkonda Road, Parkal<br>Dist. Hanamkonda</p></article>
+        <article class="detail-card reveal"><span>❀</span><h3>Lunch</h3><p>Lunch follows the ceremony</p></article>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <div class="section-heading light reveal">
+        <p class="eyebrow">Counting every moment</p>
+        <h2>Until We Say “I Do”</h2>
+      </div>
+      <div class="countdown reveal">
+        <div><strong id="days">00</strong><span>Days</span></div>
+        <div><strong id="hours">00</strong><span>Hours</span></div>
+        <div><strong id="minutes">00</strong><span>Minutes</span></div>
+        <div><strong id="seconds">00</strong><span>Seconds</span></div>
+      </div>
+    </section>
+
+    <section class="section venue-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">We would love to celebrate with you</p>
+        <h2>Find Us</h2>
+      </div>
+      <div class="venue-card reveal">
+        <div class="venue-symbol">⌖</div>
+        <h3>Lalitha Convention Hall</h3>
+        <p>Hanamkonda Road, Parkal<br>Dist. Hanamkonda</p>
+        <a class="gold-btn" href="https://maps.app.goo.gl/YA5rvVbb867YA6Wm9" target="_blank" rel="noopener">Open Google Maps</a>
+      </div>
+    </section>
+
+    <section class="gallery-section">
+      <div class="section-heading light reveal">
+        <p class="eyebrow">Moments of joy</p>
+        <h2>Our Memories</h2>
+      </div>
+      <div class="gallery">
+        <img class="gallery-wide reveal" src="images/family-display.jpg" alt="Family wedding celebration">
+        <img class="reveal" src="images/bride.jpg" alt="Bride">
+        <img class="reveal" src="images/groom.jpg" alt="Groom">
+        <img class="gallery-tall reveal" src="images/couple.jpg" alt="Couple">
+      </div>
+    </section>
+
+    <section class="section family-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">With love and blessings</p>
+        <h2>Our Families</h2>
+      </div>
+      <div class="family-card reveal">
+        <p>Hosted with love by</p>
+        <h3>Smt. &amp; Sri. Gorantala<br>Suguna–Rajaiah</h3>
+        <p>&amp; Family</p>
+      </div>
+    </section>
+
+    <section class="section rsvp-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Your presence means the world to us</p>
+        <h2>RSVP</h2>
+      </div>
+      <div class="rsvp-card reveal">
+        <p>Please contact either of our families for any details or to confirm your presence.</p>
+        <div class="contact-buttons">
+          <a href="tel:+919951024677" class="gold-btn">99510 24677</a>
+          <a href="tel:+918125320956" class="outline-btn">81253 20956</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="final-section">
+      <div class="final-overlay"></div>
+      <div class="final-content reveal">
+        <p class="eyebrow">Together with our families</p>
+        <h2>Sai Shivani <span>&amp;</span> Shiva Ganesh</h2>
+        <p>We can't wait to celebrate this beautiful beginning with you.</p>
+        <div class="ornament">❦</div>
+        <p class="love">With love ♥</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
